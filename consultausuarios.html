@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Usuarios</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        button {
+            padding: 5px 10px;
+            margin: 0 2px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-editar {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .btn-borrar {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lista de Usuarios</h2>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nuevousuario.html">Nuevo Usuario</a></li>
+        <li><a href="consultausuarios.html">Consulta Usuarios</a></li>
+        <li><a href="nuevoarticulo.html">Nuevo Artículo</a></li>
+        <li><a href="consultaarticulos.html">Consulta Artículos</a></li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Género</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan Pérez</td>
+                <td>Masculino</td>
+                <td>juan.perez@example.com</td>
+                <td>
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-borrar">Borrar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>María Gómez</td>
+                <td>Femenino</td>
+                <td>maria.gomez@example.com</td>
+                <td>
+                    <button class="btn-editar">Editar</button>
+                    <button class="btn-borrar">Borrar</button>
+                </td>
+            </tr>
+            <!-- Añadir más filas según sea necesario -->
+        </tbody>
+    </table>
+</body>
+</html>
